@@ -3,9 +3,13 @@ text analysis using sentiment
 Pre-requisites
 
    1 . https://serverless.com/framework/docs/providers/aws/guide/installation/
+   
    2 . git clone https://github.com/prabhatpankaj/textanalysissnspost.git
+   
    3 . cd textanalysissnspost 
+   
    4 . npm install --save aws-sdk sentiment
+   
    5 . serverless deploy
    
    
@@ -35,11 +39,16 @@ serverless logs --function analyzeNote
 This command will show you the logged output and looks liked this
 
 START RequestId: f51f3991-726f-11e7-a5a0-8d3ced4579e8 Version: $LATEST
+
 2017-07-27 02:04:44.295 (+00:00)        f51f3991-726f-11e7-a5a0-8d3ced4579e8    Positive note - will be published: This is such a great Day
+
 END RequestId: f51f3991-726f-11e7-a5a0-8d3ced4579e8
+
 REPORT RequestId: f51f3991-726f-11e7-a5a0-8d3ced4579e8  Duration: 2.85 ms       Billed Duration: 100 ms         Memory Size: 1024 MB    Max Memory Used: 20 MB
 
 START RequestId: 23a2e10e-7270-11e7-b6c5-f753c54661d2 Version: $LATEST
+
 2017-07-27 02:06:01.857 (+00:00)        23a2e10e-7270-11e7-b6c5-f753c54661d2    Negative note - won't be published: I will kill you
 END RequestId: 23a2e10e-7270-11e7-b6c5-f753c54661d2
+
 REPORT RequestId: 23a2e10e-7270-11e7-b6c5-f753c54661d2  Duration: 0.67 ms       Billed Duration: 100 ms         Memory Size: 1024 MB    Max Memory Used: 24 MB
